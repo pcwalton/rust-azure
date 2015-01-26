@@ -109,7 +109,7 @@ impl AsAzurePoint for Point2D<AzFloat> {
     }
 }
 
-#[deriving(Copy, Clone)]
+#[deriving(Copy, Clone, Encodable, Decodable)]
 pub struct Color {
     pub r: AzFloat,
     pub g: AzFloat,
@@ -805,7 +805,7 @@ impl GradientStops {
 }
 
 #[repr(C)]
-#[deriving(Clone)]
+#[deriving(Clone, Encodable, Decodable)]
 pub struct GradientStop {
     pub offset: AzFloat,
     pub color: Color,

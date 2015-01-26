@@ -10,6 +10,7 @@
 extern crate libc;
 extern crate geom;
 extern crate layers;
+extern crate serialize;
 #[cfg(target_os = "linux")]
 extern crate xlib;
 #[cfg(target_os = "android")]
